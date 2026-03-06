@@ -3,14 +3,14 @@
 ## Overview
 
 This document explains how to configure Nginx as a reverse proxy for two backend applications.
-
+```
 sudo apt update && sudo apt upgrade -y
-
+```
 ## Step 1 Install Nginx
-
+```
 sudo apt install nginx -y
 sudo nano /etc/nginx/conf.d/loadbalancer.conf
-
+```
 ```
 upstream backend_servers {
     server 192.168.x.x;
@@ -31,10 +31,12 @@ server {
 
 ```
 ## Step 4 Test Configuration
-
+```
 sudo nginx -t
 sudo systemctl restart nginx
 sudo rm /etc/nginx/sites-enabled/default
-
+```
 ## Nginx Error check
+`
 sudo tail -f /var/log/nginx/error.log
+`
