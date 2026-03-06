@@ -11,7 +11,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install nginx -y
 sudo nano /etc/nginx/conf.d/loadbalancer.conf
 ```
-# Step 2 Configure Nginx
+## Step 2 Configure Nginx
 ```
 upstream backend_servers {
     server 192.168.x.x;
@@ -31,7 +31,7 @@ server {
 }
 
 ```
-## Step 4 Test Configuration
+## Step 3 Test Configuration
 ```
 sudo nginx -t
 sudo systemctl restart nginx
