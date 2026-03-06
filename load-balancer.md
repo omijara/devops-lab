@@ -37,6 +37,10 @@ sudo nginx -t
 sudo systemctl restart nginx
 sudo rm /etc/nginx/sites-enabled/default
 ```
+## Step 4 remove default file
+```
+sudo rm /etc/nginx/sites-enabled/default
+```
 ## Nginx Error check
 ```
 sudo tail -f /var/log/nginx/error.log
