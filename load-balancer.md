@@ -1,4 +1,4 @@
-# Reverse Proxy Setup using Nginx
+# Load Balancer Setup Using Nginx Reverse Proxy
 
 ## Overview
 
